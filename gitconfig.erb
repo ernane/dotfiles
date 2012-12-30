@@ -6,7 +6,7 @@
 [color]
 	diff = auto
 	status = auto
-	branch = auto
+    branch = auto
     ui = true
 [core]
 	excludesfile = <%= ENV['HOME'] %>/.gitignore
@@ -19,3 +19,5 @@
 [github]
 	user = <%= print("GitHub Username: "); STDOUT.flush; STDIN.gets.chomp %>
 	token = <%= print("GitHub API Token: "); STDOUT.flush; STDIN.gets.chomp %>
+[push]
+	default = simple
